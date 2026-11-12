@@ -1,0 +1,10 @@
+dataset_root: /run/media/minhduc/D/Study/r2s100k
+checkpoint: checkpoints/sed_model_large.pth
+output: runs/sed_l_train
+device: cuda
+workers: 4
+seed: 42
+budget_seconds: 10800
+warmup_images: 10
+benchmark_images: 100
+ignore_id: null

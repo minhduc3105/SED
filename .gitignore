@@ -1,0 +1,6 @@
+.venv/
+checkpoints/
+runs/
+__pycache__/
+.pytest_cache/
+SED.pdf

@@ -1,6 +1,6 @@
 # SED-L zero-shot trên R2S100K train
 
-Project này gọi checkpoint **SED ConvNeXt-L chính thức** để xuất mask 15 ID R2S100K, rồi đánh giá trên tập train có nhãn. Không cập nhật trọng số. Kết quả là zero-shot transfer trên **train**, không phải test độc lập. Mã SED gốc ở `third_party/SED`, commit `db20d93c0ec8b0ce7fae267a10f826dfc7da15f5` ([nguồn](https://github.com/xb534/SED)). Taxonomy, palette và prompt nằm trong `sed_r2s100k/taxonomy.py`; prompt ensemble `imagenet` theo cấu hình SED-L.
+Project này gọi checkpoint **SED ConvNeXt-L chính thức** để xuất mask 15 ID R2S100K, rồi đánh giá trên tập train có nhãn. Không cập nhật trọng số. Kết quả là zero-shot transfer trên **train**, không phải test độc lập. Mã SED gốc là Git submodule ở `third_party/SED`, commit `db20d93c0ec8b0ce7fae267a10f826dfc7da15f5` ([nguồn](https://github.com/xb534/SED)). Khi clone project qua Git, dùng `git clone --recurse-submodules` hoặc chạy `git submodule update --init --recursive`. Taxonomy, palette và prompt nằm trong `sed_r2s100k/taxonomy.py`; prompt ensemble `imagenet` theo cấu hình SED-L.
 
 ## Cài đặt
 
